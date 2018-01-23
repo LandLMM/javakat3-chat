@@ -1,6 +1,9 @@
 package pl.sdacademy.javakato3.chat.model;
 
-public class ChatMessage {
+import java.io.Serializable;
+
+public class ChatMessage implements Serializable {
+    public static final long serialVersionUID = 1L;
     private String author;
     private String message;
 
@@ -28,16 +31,4 @@ public class ChatMessage {
     public void setMessage(String message) {
         this.message = message;
     }
-
-/*
-Stwórz klasę ChatMessage, która będzie zawierała dwa pola:
-private String author
-private String message
-Zaimplementuj klasę DatedChatMessage, która
-Będzie rozrzeszała klasę ChatMessage
-Będzie zawierała pole Date receiveDate
-Będzie posiadała konstruktor, który przyjmuje ChatMessage.
-Konstruktor będzie ustawiał receiveDate
-Zaimplementuj interface Serializable
-     */
 }
