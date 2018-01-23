@@ -17,13 +17,4 @@ public class DatedChatMessage extends ChatMessage {
     public void setReceiveDate(Date receiveDate) {
         this.receiveDate = receiveDate;
     }
-
-    /*
-
-Będzie rozrzeszała klasę ChatMessage
-Będzie zawierała pole Date receiveDate
-Będzie posiadała konstruktor, który przyjmuje ChatMessage.
-Konstruktor będzie ustawiał receiveDate
-Zaimplementuj interface Serializable
-     */
 }
